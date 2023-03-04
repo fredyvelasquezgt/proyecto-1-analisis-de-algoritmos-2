@@ -76,6 +76,9 @@ def mtd_fibonacci(n):
     
     fib = fibonacci(n)
     print('El', n, 'ésimo número de la secuencia de Fibonacci es:', fib)
+    
+    values_on_tape = [x for x in tape if x != 'B']
+    print('Valores finales en la cinta:', values_on_tape)
 
 n = int(input('Ingrese un número para calcular el número correspondiente en la secuencia de Fibonacci: '))
 mtd_fibonacci(n)
