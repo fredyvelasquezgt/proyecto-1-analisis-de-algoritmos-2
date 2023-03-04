@@ -72,7 +72,10 @@ def mtd_fibonacci(n):
                     state = 'q1'
     
     end_time = time.time()
-    print('TIempo:', end_time - start_time)
+    print('Elapsed time:', end_time - start_time)
+    
+    fib = fibonacci(n)
+    print('El', n, 'ésimo número de la secuencia de Fibonacci es:', fib)
 
 n = int(input('Ingrese un número para calcular el número correspondiente en la secuencia de Fibonacci: '))
 mtd_fibonacci(n)
